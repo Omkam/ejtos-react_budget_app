@@ -10,11 +10,7 @@ const CurrencyList = (props) => {
 
     const submitEvent = () => {
 
-            if(cost > remaining) {
-                alert("The value cannot exceed remaining funds  £"+remaining);
-                setCost("");
-                return;
-            }
+            
 
         const expense = {
             name: name,
@@ -42,7 +38,6 @@ const CurrencyList = (props) => {
                 <label className="input-group-text" htmlFor="inputGroupSelect01">Currency</label>
                 </div>
                   <select className="custom-select" id="inputGroupSelect01" onChange={(event) => setName(event.target.value)}>
-                        <option defaultValue>Choose...</option>
                         <option value="Dollar" name="dollar">$Dollar</option>
                         <option value="Pound" name="pound">£Pound</option>
                         <option value="Euro" name="euro">€Euro</option>
