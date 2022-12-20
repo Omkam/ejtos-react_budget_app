@@ -33,11 +33,12 @@ const CurrencyList = (props) => {
         <div>
             <div className='row'>
 
-            <div className="input-group mb-3" style={{ marginLeft: '2rem' }}>
+            <div className="alert alert-secondary p-3 d-flex align-items-center justify-content-between" style={{ marginLeft: '2rem' }}>
                     <div className="input-group-prepend">
-                <label className="input-group-text" htmlFor="inputGroupSelect01">Currency</label>
+                <label className="input-group-text" htmlFor="inputGroupSelect01">Choose a Currency</label>
                 </div>
                   <select className="custom-select" id="inputGroupSelect01" onChange={(event) => setName(event.target.value)}>
+                        <option defaultValue>Choose...</option>
                         <option value="Dollar" name="dollar">$Dollar</option>
                         <option value="Pound" name="pound">£Pound</option>
                         <option value="Euro" name="euro">€Euro</option>
